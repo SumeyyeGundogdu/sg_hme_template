@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="STUDENT INFO" icon-name="standart:Account">
+        <div class="slds-var-m-around_medium">
+            <lightning-input
+                label="STUDENT NAME"
+                type="text"
+                value={studentName}
+                name="Name"
+                onchange={changeHandler}>
+            </lightning-input>
+            <lightning-input
+                label="STUDENT CLASS"
+                type="number"
+                value={studentClass}
+                name="Class"
+                onchange={changeHandler}>
+            </lightning-input>
+            <div class="slds-var-m-top_medium">
+                <c-class-work-child
+                student-name={studentName}
+                student-class={studentClass}
+                fruits={fruitss}  
+                >
+                  
+            </c-class-work-child>
+            </div>
+
+        </div>
+    </lightning-card>
+</template>
